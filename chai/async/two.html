@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>chai or Javascript</h1>
+    <button id="stop">stop</button>
+    <button id="start">start</button>
+  </body>
+  <script>
+    // setInterval(function () {
+    //   console.log("durgesh", Date.now());
+    // }, 1000);
+
+    // const sayDate = function () {
+    //   console.log("durgesh", Date.now());
+    // };
+    // setInterval(sayDate, 1000);
+
+    // const sayDate = function (str) {
+    //   console.log(str, Date.now());
+    // };
+    // setInterval(sayDate, 1000, "durgesh");
+
+    const sayDate = function (str) {
+      console.log(str, Date.now());
+    };
+    const intervalId = setInterval(sayDate, 1000, "durgesh");
+    clearInterval(intervalId);
+  </script>
+</html>
